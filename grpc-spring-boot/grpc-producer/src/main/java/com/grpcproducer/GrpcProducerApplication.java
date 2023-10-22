@@ -1,13 +1,13 @@
-package com.mini.springboot.grpcconsumer;
+package com.grpcproducer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GrpcConsumerApplication {
+public class GrpcProducerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GrpcConsumerApplication.class, args);
+		SpringApplication.run(GrpcProducerApplication.class, args);
 	}
 
 }

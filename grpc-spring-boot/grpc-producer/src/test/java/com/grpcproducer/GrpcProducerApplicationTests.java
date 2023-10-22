@@ -1,4 +1,4 @@
-package com.mini.springboot.grpcproducer;
+package com.grpcproducer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

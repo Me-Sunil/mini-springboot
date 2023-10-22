@@ -1,4 +1,4 @@
-package com.mini.springboot.grpcconsumer;
+package com.grpcconsumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
