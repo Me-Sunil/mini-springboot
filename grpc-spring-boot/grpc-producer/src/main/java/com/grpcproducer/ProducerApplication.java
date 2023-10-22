@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GrpcProducerApplication {
+public class ProducerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GrpcProducerApplication.class, args);
+		SpringApplication.run(ProducerApplication.class, args);
 	}
 
 }
