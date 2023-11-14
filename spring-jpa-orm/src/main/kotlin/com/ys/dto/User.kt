@@ -18,4 +18,4 @@ class User(
     @OneToMany(mappedBy = "user", cascade = [CascadeType.ALL])
     var addresses: Set<Address> = HashSet(),
 
-) : Serializable
+    ) : Serializable

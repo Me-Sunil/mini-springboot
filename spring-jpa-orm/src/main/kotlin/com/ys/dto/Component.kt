@@ -16,6 +16,6 @@ class Component(
 
     @ManyToOne
     @JoinColumn(name = "recommendation_id", nullable = false)
-    val recommendation : Recommendation
+    val recommendation: Recommendation
 
 ) : Serializable

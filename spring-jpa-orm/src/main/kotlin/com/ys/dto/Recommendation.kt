@@ -11,7 +11,7 @@ class Recommendation(
     val uniqueId: Long? = null,
 
     @Column(unique = true)
-    val recommendationId : String,
+    val recommendationId: String,
 
     @Column
     @OneToMany(mappedBy = "recommendation", cascade = [CascadeType.ALL])
@@ -19,6 +19,6 @@ class Recommendation(
 
     @ManyToOne
     @JoinColumn(name = "product_id", nullable = false)
-    val product : Product
+    val product: Product
 
 ) : Serializable

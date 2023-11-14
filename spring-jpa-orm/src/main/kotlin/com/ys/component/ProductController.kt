@@ -1,7 +1,11 @@
 package com.ys.component
 
-import com.ys.dto.*
-import com.ys.service.*
+import com.ys.dto.Component
+import com.ys.dto.Product
+import com.ys.dto.Recommendation
+import com.ys.service.ComponentService
+import com.ys.service.ProductService
+import com.ys.service.RecommendationService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 

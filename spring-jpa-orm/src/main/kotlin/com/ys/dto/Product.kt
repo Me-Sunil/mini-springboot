@@ -12,10 +12,10 @@ class Product(
     val uniqueId: Long? = null,
 
     @Column(unique = true)
-    val productId : String,
+    val productId: String,
 
     @Column
     @OneToMany(mappedBy = "product", cascade = [CascadeType.ALL])
     var recommendations: Set<Recommendation> = HashSet(),
 
-) : Serializable
+    ) : Serializable
