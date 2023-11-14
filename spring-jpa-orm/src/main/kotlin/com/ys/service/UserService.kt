@@ -22,7 +22,7 @@ class UserService(
         return repository.findByUserName(userName)
     }
 
-    fun echoUser(user: User) : String{
-        return "${user.userId} - ${user.userName} - ${user.addresses}"
+    fun echoUser(user: User){
+        println("${user.userId} - ${user.userName} - ${user.addresses}")
     }
 }

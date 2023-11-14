@@ -15,8 +15,4 @@ class AddressService(
     fun findAll(): List<Address> {
         return repository.findAll()
     }
-
-    fun echoUser(address: Address): String {
-        return "${address.addressId} - ${address.cityName} - ${address.country}"
-    }
 }

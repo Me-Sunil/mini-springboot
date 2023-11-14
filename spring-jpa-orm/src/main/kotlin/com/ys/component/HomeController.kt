@@ -41,8 +41,8 @@ class HomeController(
         // Print Objects
         println()
 
-        println(userService.echoUser(userA));
-        println(userService.echoUser(userB));
+        userService.echoUser(userA)
+        userService.echoUser(userB)
 
         val optionalUser = userService.findByUserName("A")
         val user = optionalUser.get()
@@ -54,7 +54,7 @@ class HomeController(
         // Print Objects
         println()
 
-        println(userService.echoUser(userA));
-        println(userService.echoUser(userB));
+        userService.echoUser(userA)
+        userService.echoUser(userB)
     }
 }
