@@ -7,7 +7,6 @@ import com.ys.service.UserService
 import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import java.lang.Error
 
 @RestController
 class HomeController(
@@ -19,8 +18,8 @@ class HomeController(
 
     @GetMapping("/")
     fun getHome() {
-        val userA = User(userName = "A");
-        val userB = User(userName = "B");
+        val userA = User(userName = "A")
+        val userB = User(userName = "B")
 
         // Address A & B
         val addressA = Address(cityName = "BLR", country = "IND", user = userA)

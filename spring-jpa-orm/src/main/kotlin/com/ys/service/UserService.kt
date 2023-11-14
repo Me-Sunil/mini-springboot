@@ -3,7 +3,7 @@ package com.ys.service
 import com.ys.dto.User
 import com.ys.respository.UserRepository
 import org.springframework.stereotype.Service
-import java.util.Optional
+import java.util.*
 
 @Service
 class UserService(
@@ -18,11 +18,11 @@ class UserService(
         return repository.findAll()
     }
 
-    fun findByUserName(userName : String): Optional<User> {
+    fun findByUserName(userName: String): Optional<User> {
         return repository.findByUserName(userName)
     }
 
-    fun echoUser(user: User){
+    fun echoUser(user: User) {
         println("${user.userId} - ${user.userName} - ${user.addresses}")
     }
 }

@@ -11,17 +11,17 @@ class Address(
     val addressId: Long? = null,
 
     @Column
-    var cityName : String,
+    var cityName: String,
 
     @Column
-    var country : String,
+    var country: String,
 
     @ManyToOne
-    @JoinColumn(name ="user_id", nullable = false)
-    val user : User
+    @JoinColumn(name = "user_id", nullable = false)
+    val user: User
 
 
-): Serializable {
+) : Serializable {
     override fun toString(): String {
         return "Address(addressId=$addressId, cityName='$cityName', country='$country')"
     }

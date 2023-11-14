@@ -11,5 +11,5 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 class OrmApplication
 
 fun main(args: Array<String>) {
-	runApplication<OrmApplication>(*args)
+    runApplication<OrmApplication>(*args)
 }
