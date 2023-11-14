@@ -12,9 +12,10 @@ class User(
     val userId: Long? = null,
 
     @Column
+    val userName: String,
+
+    @Column
     @OneToMany(mappedBy = "user", cascade = [CascadeType.ALL])
     var addresses: Set<Address> = HashSet(),
 
-    @Column
-    val userName: String
 ) : Serializable
