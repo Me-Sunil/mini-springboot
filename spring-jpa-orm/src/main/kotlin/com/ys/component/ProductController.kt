@@ -16,7 +16,7 @@ class ProductController(
     val componentService: ComponentService
 ) {
     @GetMapping("/product")
-    fun getHome() {
+    fun getHome(): List<Product> {
         val productA = Product(productId = "12345")
         val productB = Product(productId = "54321")
 
@@ -67,5 +67,7 @@ class ProductController(
         componentService.save(componentBBB)
 
         println("Save in Sequence")
+
+        return listOf(productA, productB)
     }
 }

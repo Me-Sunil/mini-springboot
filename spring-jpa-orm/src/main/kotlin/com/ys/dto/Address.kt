@@ -1,5 +1,6 @@
 package com.ys.dto
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import jakarta.persistence.*
 import java.io.Serializable
 
@@ -17,6 +18,7 @@ class Address(
     var country: String,
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "user_id", nullable = false)
     val user: User
 

@@ -1,5 +1,6 @@
 package com.ys.dto
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import jakarta.persistence.*
 import java.io.Serializable
 
@@ -15,6 +16,7 @@ class Component(
     val componentName: String,
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "recommendation_id", nullable = false)
     val recommendation: Recommendation
 
