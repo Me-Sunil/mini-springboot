@@ -17,14 +17,24 @@ class ProductController(
 ) {
     @GetMapping("/product")
     fun getHome(): List<Product> {
-        val productA = Product(productId = "12345")
-        val productB = Product(productId = "54321")
 
-        val recommendationAA = Recommendation(recommendationId = "123", product = productA)
-        val recommendationAB = Recommendation(recommendationId = "456", product = productA)
+        val uniqueProductAId = (Math.random() * 100000).toInt().toString();
+        val uniqueProductBId = (Math.random() * 100000).toInt().toString();
 
-        val recommendationBA = Recommendation(recommendationId = "789", product = productB)
-        val recommendationBB = Recommendation(recommendationId = "987", product = productB)
+        val productA = Product(productId = uniqueProductAId)
+        val productB = Product(productId = uniqueProductBId)
+
+        val uniqueRecommendationAAId = (Math.random() * 100000).toInt().toString();
+        val uniqueRecommendationABId = (Math.random() * 100000).toInt().toString();
+
+        val recommendationAA = Recommendation(recommendationId = uniqueRecommendationAAId, product = productA)
+        val recommendationAB = Recommendation(recommendationId = uniqueRecommendationABId, product = productA)
+
+        val uniqueRecommendationBAId = (Math.random() * 100000).toInt().toString();
+        val uniqueRecommendationBBId = (Math.random() * 100000).toInt().toString();
+
+        val recommendationBA = Recommendation(recommendationId = uniqueRecommendationBAId, product = productB)
+        val recommendationBB = Recommendation(recommendationId = uniqueRecommendationBBId, product = productB)
 
         val componentAAA = Component(componentName = "AAA", recommendation = recommendationAA)
         val componentAAB = Component(componentName = "AAB", recommendation = recommendationAA)
